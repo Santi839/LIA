@@ -1,0 +1,77 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.4); /* Blanco con 40% opacidad */
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    min-height: 120px;
+}
+
+.logo {
+    position: absolute;
+    left: 100px;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0A192F;
+    font-weight: 500;
+    font-size: 1.15rem;
+    transition: all 0.3s ease;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+}
+
+.nav-links a:not(.consulta-btn):hover {
+    color: #040b16;
+    background-color: rgba(212, 175, 55, 0.12);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
+
+.nav-links .consulta-btn {
+    background-color: #C8B499;
+    color: #0A192F;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nav-links .consulta-btn:hover {
+    background-color: #0A192F;
+    color: #ffffff;
+    text-decoration: none;
+}

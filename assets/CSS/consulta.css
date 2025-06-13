@@ -1,0 +1,96 @@
+.consulta-hero {
+    background-image: url('../img/img_consulta.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+
+.consulta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.consulta-content {
+    max-width: 800px;
+    padding: 20px;
+    color: white;
+}
+
+.consulta-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.consulta-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-consulta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #C8A97E;
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consulta:hover {
+    background-color: #b3955f;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button i {
+    font-size: 1.5rem;
+    color: #25D366;
+}
+
+.whatsapp-button:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .consulta-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .consulta-content p {
+        font-size: 1.2rem;
+    }    .whatsapp-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
