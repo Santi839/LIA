@@ -27,7 +27,9 @@
     justify-content: space-between;
     gap: 4rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 @keyframes slideFromLeft {
@@ -45,7 +47,7 @@
     flex: 1;
 }
 
-.servicio-item {
+.servicio-item  {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -70,15 +72,48 @@
 }
 
 .servicio-item h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
     color: #ffffff;
+    opacity: 0.6;
+    font-weight: 600;
+
 }
 
-.servicio-item p {
+.servicio-item-primero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.servicio-item-primero p {
     color: #ffffff;
     opacity: 0.8;
     line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.servicio-item.desplegado {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 1;
+    /* Hereda estilos de .servicio-item-primero */
+}
+.servicio-item.desplegado h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 1;
+}
+.servicio-item.desplegado p {
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .servicios-image {
@@ -88,9 +123,8 @@
 }
 
 .servicios-image img {
-    width: 100%;
+    width: 600px;
     height: auto;
-    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

@@ -11,6 +11,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    max-height: 500px;
 }
 
 .quienes-somos-imagen {
@@ -21,21 +22,19 @@
 }
 
 .quienes-somos-imagen img {
-    width: 100%;
+    width: 600px;
     height: auto;
-    border-radius: 8px;
     position: relative;
     z-index: 2;
 }
 
 .imagen-decoracion {
     position: absolute;
-    bottom: -20px;
-    left: -20px;
-    width: 100%;
-    height: 100%;
-    background-color: #d4b675;
-    border-radius: 8px;
+    bottom: -30px;
+    left: -30px;
+    width: 500px;
+    height: 250px;
+    background-color: #C8B499;
     z-index: 1;
 }
 
@@ -47,22 +46,25 @@
 
 .quienes-somos-titulo {
     color: #1c2c4c;
-    font-size: 2.5rem;
+    font-size: 3.3rem;
     font-weight: 700;
     margin-bottom: 25px;
     animation: slideInFromRight 1.2s ease-out 0.2s forwards;
     opacity: 0;
     text-align: left;
+    max-width: 200px;
 }
 
 .quienes-somos-descripcion {
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     margin-bottom: 30px;
     animation: slideInFromRight 1.2s ease-out 0.4s forwards;
     opacity: 0;
     text-align: left;
+    font-weight: 500;
+    max-width: 700px;
 }
 
 @keyframes slideInFromRight {

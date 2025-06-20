@@ -15,7 +15,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 2rem;
-    min-height: 120px;
+    min-height: 105px;
 }
 
 .logo {
@@ -36,7 +36,7 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #0A192F;
+    color: rgba(10, 25, 47, 0.7); /* Added transparency to the text color */
     font-weight: 500;
     font-size: 1.15rem;
     transition: all 0.3s ease;
@@ -45,8 +45,8 @@
 }
 
 .nav-links a:not(.consulta-btn):hover {
-    color: #040b16;
-    background-color: rgba(212, 175, 55, 0.12);
+    color: #0A192F; /* Full opacity on hover */
+    /* background-color: rgba(212, 175, 55, 0.12); */
 }
 
 @media (max-width: 768px) {

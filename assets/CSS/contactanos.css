@@ -68,7 +68,7 @@
 }
 
 .submit-btn {
-    background-color: #C2B280;
+    background-color: #C8B499;
     color: #000000;
     padding: 12px 40px;
     border: none;
@@ -78,10 +78,6 @@
     align-self: flex-end;
     transition: background-color 0.3s;
     font-weight: 600;
-}
-
-.submit-btn:hover {
-    background-color: #d4c494;
 }
 
 .contact-info {
